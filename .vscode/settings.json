@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/150fa7d1-e45e-47f0-a7e2-3c2b4b79e4dc/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/news-aggregator-kevin",
+    "appService.deploySubpath": "."
+}

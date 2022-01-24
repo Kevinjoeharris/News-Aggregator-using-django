@@ -1,0 +1,318 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Burgee Byte</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="News Aggregator" />
+	<meta name="keywords" content="latest news, news, sports news, celevbrity news, political news" />
+	<meta name="author" content="S Kevin Joe Harris" />
+
+ 
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="#">
+
+	<!-- Google Webfonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'news/css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'news/css/icomoon.css' %}">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{% static 'news/css/magnific-popup.css' %}">
+	<!-- Salvattore -->
+	<link rel="stylesheet" href="{% static 'news/css/salvattore.css' %}">
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="{% static 'news/css/style.css' %}">
+	<!-- Modernizr JS -->
+	<script src="{% static 'news/js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div id="fh5co-offcanvass">
+		<a href="#" class="fh5co-offcanvass-close js-fh5co-offcanvass-close">Menu <i class="icon-cross"></i> </a>
+		<h1 class="fh5co-logo"><a class="navbar-brand" href="index.html">Burgee Byte</a></h1>
+		<ul>
+			<li class="active"><a href="index.html">Home</a></li>
+		</ul>
+		<h3 class="fh5co-lead">Connect with us</h3>
+		<p class="fh5co-social-icons">
+			<a href="https://www.facebook.com/burgeebyte.in/"><i class="icon-facebook"></i></a>
+			<a href="https://www.instagram.com/burgeebyte/"><i class="icon-instagram"></i></a>
+		</p>
+	</div>
+	<header id="fh5co-header" role="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="#" class="fh5co-menu-btn js-fh5co-menu-btn">Menu <i class="icon-menu"></i></a>
+					<a class="navbar-brand" href="index.html">Burgee byte</a>		
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- END .header -->
+	
+	
+	<div id="fh5co-main">
+		<div class="container">
+
+			<div class="row">
+
+        <div id="fh5co-board" data-columns>
+			<!--NDTV NEWS-->
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{ndtv_img.0}}" class="image-popup fh5co-board-img"><img src="{{ndtv_img.0}}" alt="img"></a>
+        		</div>
+        		<div class="fh5co-desc"><a href="{{ndtv_news.1}}">{{ndtv_headings.1}}</a></div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{ndtv_img.1}}" class="image-popup fh5co-board-img"><img src="{{ndtv_img.1}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{ndtv_news.2}}">{{ndtv_headings.2}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{ndtv_img.2}}" class="image-popup fh5co-board-img"><img src="{{ndtv_img.2}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{ndtv_news.3}}">{{ndtv_headings.3}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{ndtv_img.3}}" class="image-popup fh5co-board-img"><img src="{{ndtv_img.3}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{ndtv_news.4}}">{{ndtv_headings.4}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{ndtv_img.4}}" class="image-popup fh5co-board-img"><img src="{{ndtv_img.4}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{ndtv_news.5}}">{{ndtv_headings.5}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{ndtv_img.5}}" class="image-popup fh5co-board-img"><img src="{{ndtv_img.5}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{ndtv_news.6}}">{{ndtv_headings.6}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{ndtv_img.6}}" class="image-popup fh5co-board-img"><img src="{{ndtv_img.6}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{ndtv_news.7}}">{{ndtv_headings.7}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{ndtv_img.7}}" class="image-popup fh5co-board-img"><img src="{{ndtv_img.7}}g" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{ndtv_news.8}}">{{ndtv_headings.8}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{ndtv_img.8}}" class="image-popup fh5co-board-img"><img src="{{ndtv_img.8}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{ndtv_news.10}}">{{ndtv_headings.9}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{ndtv_img.9}}" class="image-popup fh5co-board-img"><img src="{{ndtv_img.9}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{ndtv_news.11}}">{{ndtv_headings.10}}</a></div>
+        		</div>
+        	</div>
+			<!--NEWS18 NEWS-->
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{news18_img.0}}" class="image-popup fh5co-board-img"><img src="{{news18_img.0}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{news18_news.0}}">{{news18_headings.0}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{news18_img.1}}" class="image-popup fh5co-board-img"><img src="{{news18_img.1}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{news18_news.1}}">{{news18_headings.1}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{news18_img.2}}" class="image-popup fh5co-board-img"><img src="{{news18_img.2}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{news18_news.2}}">{{news18_headings.2}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{news18_img.3}}" class="image-popup fh5co-board-img"><img src="{{news18_img.3}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{news18_news.3}}">{{news18_headings.3}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{news18_img.4}}" class="image-popup fh5co-board-img"><img src="{{news18_img.4}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{news18_news.4}}">{{news18_headings.4}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{news18_img.5}}" class="image-popup fh5co-board-img"><img src="{{news18_img.5}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{news18_news.5}}">{{news18_headings.5}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{news18_img.6}}" class="image-popup fh5co-board-img"><img src="{{news18_img.6}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{news18_news.6}}">{{news18_headings.6}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{news18_img.7}}" class="image-popup fh5co-board-img"><img src="{{news18_img.7}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{news18_news.7}}">{{news18_headings.7}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{news18_img.8}}" class="image-popup fh5co-board-img"><img src="{{news18_img.8}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{news18_news.8}}">{{news18_headings.8}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{news18_img.9}}" class="image-popup fh5co-board-img"><img src="{{news18_img.9}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{news18_news.9}}">{{news18_headings.9}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{news18_img.10}}" class="image-popup fh5co-board-img"><img src="{{news18_img.10}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{news18_news.10}}">{{news18_headings.10}}</a></div>
+        		</div>
+        	</div>
+        	
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{news18_img.11}}" class="image-popup fh5co-board-img"><img src="{{news18_img.11}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{news18_news.11}}">{{news18_headings.11}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{news18_img.12}}" class="image-popup fh5co-board-img"><img src="{{news18_img.12}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{news18_news.12}}">{{news18_headings.12}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{news18_img.13}}" class="image-popup fh5co-board-img"><img src="{{news18_img.13}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{news18_news.13}}">{{news18_headings.13}}</a></div>
+        		</div>
+        	</div>
+
+			<!--CNET NEWS-->
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{cnet_img.0}}" class="image-popup fh5co-board-img"><img src="{{cnet_img.0}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{cnet_news.0}}">{{cnet_headings.0}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{cnet_img.1}}" class="image-popup fh5co-board-img"><img src="{{cnet_img.1}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{cnet_news.2}}">{{cnet_headings.1}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{cnet_img.2}}" class="image-popup fh5co-board-img"><img src="{{cnet_img.2}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{cnet_news.4}}">{{cnet_headings.2}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{cnet_img.3}}" class="image-popup fh5co-board-img"><img src="{{cnet_img.3}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{cnet_news.6}}">{{cnet_headings.3}}</a></div>
+        		</div>
+        	</div>
+			<!--
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{cnet_img.4}}" class="image-popup fh5co-board-img"><img src="{{cnet_img.4}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{cnet_news.4}}">{{cnet_headings.4}}</a></div>
+        		</div>
+        	</div>
+        	<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{cnet_img.5}}" class="image-popup fh5co-board-img"><img src="{{cnet_img.5}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{cnet_news.5}}">{{cnet_headings.5}}</a></div>
+        		</div>
+        	</div>
+			<div class="item">
+        		<div class="animate-box">
+	        		<a href="{{cnet_img.6}}" class="image-popup fh5co-board-img"><img src="{{cnet_img.6}}" alt="img"></a>
+	        		<div class="fh5co-desc"><a href="{{cnet_news.6}}">{{cnet_headings.6}}</a></div>
+        		</div>
+        	</div>-->
+        </div>
+        </div>
+       </div>
+	</div>
+
+	<footer id="fh5co-footer">
+		
+		<div class="container">
+			<div class="row row-padded">
+				<div class="col-md-12 text-center">
+					<p class="fh5co-social-icons">
+						<a href="https://www.facebook.com/burgeebyte.in/"><i class="icon-facebook"></i></a>
+						<a href="https://www.instagram.com/burgeebyte/"><i class="icon-instagram"></i></a>
+					</p>
+					<p><small>&copy; Burgee Byte <br>Designed by: <a href="https://www.linkedin.com/in/kevin-joe-harris/" target="_blank">S Kevin Joe Harris</a></small></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- jQuery -->
+	<script src="{% static 'news/js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'news/js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'news/js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'news/js/jquery.waypoints.min.js' %}"></script> 
+	<!-- Magnific Popup -->
+	<script src=" {% static 'news/js/jquery.magnific-popup.min.js' %}"></script>}
+	<!-- Salvattore -->
+	<script src="{% static 'news/js/salvattore.min.js' %}"></script>
+	<!-- Main JS -->
+	<script src="{% static 'news/js/main.js' %}"></script>
+
+	
+
+	
+	</body>
+</html>
