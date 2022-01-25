@@ -1,0 +1,6 @@
+django
+requests
+bs4
+urllib3
+django.shortcuts
+whitenoise
