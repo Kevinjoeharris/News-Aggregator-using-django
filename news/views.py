@@ -44,11 +44,11 @@ def get_news18():
     page2 = requests.get("https://www.news18.com/")
     soup2 = BeautifulSoup(page2.content, 'html.parser')
     #Get all links
-    b = soup2.find_all('div', class_='vspacer30')
+    b = soup2.find_all('ul', class_='hot_trending_list')
     l1=[]
     l2=[]
     l3=[]
-    l4=["/buzz/","/movies/","/sports/","/cricketnext/","/tech/","/football/"]
+    l4=["/buzz/","/movies/","/sports/","/cricketnext/","/tech/","/football/","/lifestyle/"]
     for x in b:
         for link in x.find_all('a'):
             a = link.get('href')
@@ -63,16 +63,14 @@ def get_news18():
     [news18_img_links.append(x) for x in l2 if x not in news18_img_links]
     [news18_headings.append(x) for x in l3 if x not in news18_headings]
 
-    #for x in range(len(news18_links)-2):
-    #    print(news18_links[x],"\n",news18_img_links[x],"\n",news18_headings[x],"\n\n")
-
+    
 
 #Function to srape CNET
 def get_cnet():
     page3 = requests.get("https://www.cnet.com/news/")
     soup3 = BeautifulSoup(page3.content, 'html.parser')
     #Get all links
-    b = soup3.find_all('div', class_='col-2 assetWrap')
+    b = soup3.find_all('div', class_='g-outer-spacing-right-medium-fluid')
     l1=[]
     l2=[]
     l3=[]
@@ -83,12 +81,16 @@ def get_cnet():
             l1.append(b)
         for img in x.find_all('img'):
             l2.append(img['src']) 
-        for hd in x.find_all('h6'):
+        for hd in x.find_all('h3'):
             l3.append(hd.text)
 
     [cnet_links.append(x) for x in l1 if x not in cnet_links]  
     [cnet_img_links.append(x) for x in l2 if x not in cnet_img_links]
     [cnet_headings.append(x) for x in l3 if x not in cnet_headings]
+
+    for x in range(len(cnet_links)-2):
+        print(cnet_links[x],"\n",cnet_img_links[x],"\n",cnet_headings[x],"\n\n")
+
     
       
 
