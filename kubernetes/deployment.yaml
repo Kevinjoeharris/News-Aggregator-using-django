@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: news-aggregator-deployment
+  labels:
+    app: news-aggregator
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: news-aggregator
+  template:
+    metadata:
+      labels:
+        app: news-aggregator
+    spec:
+      containers:
+      - name: news-aggregator
+        image: kevinjoehar/news-aggregator:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8000
