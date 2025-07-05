@@ -22,3 +22,6 @@ jobs:
 
       - name: Push image to Docker Hub
         run: docker push ${{ secrets.DOCKER_USERNAME }}/news-aggregator:latest
+
+      - name: Deploy on Kubernetes
+        run: kubectl apply -f https://raw.githubusercontent.com/Kevinjoeharris/Cloud-Native-News-Aggregator-on-Azure-AKS/master/kubernetes/deployment.yaml --validate=false
